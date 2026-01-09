@@ -8,14 +8,14 @@ export default function Nav({ session, setSession }) {
   return (
     <nav style={{ backgroundColor: "#008080", padding: "12px 20px", display: "flex", justifyContent: "space-between", color: "white" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <img src="/loga.png" alt="UnderCare" style={{ height: 28, borderRadius: 6 }} />
+        <img src="/logo.png" alt="UnderCare" style={{ height: 28, borderRadius: 6 }} />
         <strong>UnderCare</strong>
       </div>
       <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
         <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
         <Link to="/emergency" style={{ color: "white", textDecoration: "none", fontWeight: 700 }}>Emergency</Link>
         {session?.role && (
-          <Link to={`/${session.role}`} style={{ color: "white", textDecoration: "none" }}>
+          <Link to="/login" style={{ color: "white", textDecoration: "none" }}>
             {session.role} Dashboard
           </Link>
         )}
