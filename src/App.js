@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import DoctorDashboard from "./pages/DoctorDashboard";
 import GuardianDashboard from "./pages/GuardianDashboard";
 import PatientDashboard from "./pages/PatientDashboard";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav.jsx";
 import Emergency from "./components/Emergency";
 
 export default function App() {
